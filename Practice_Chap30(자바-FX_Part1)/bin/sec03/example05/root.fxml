@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.TilePane?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+
+<!-- 타일의 크기를 설정해준다 -->
+<TilePane xmlns:fx="http://javafx.com/fxml/1" prefTileHeight="100" prefTileWidth="100">
+	<children>
+	<!-- ImageView는 이미지 하나를 보여주기 위한 클래스이다. image클래스의 생성자는 url(경로)을 매개값으로 지닌다.
+	또한 @는 그 경로에 있는 이미지 파일을 참조해서 사용하겠다. -->
+		<ImageView>
+			<image>
+				<Image url="@images/fruit1.jpg" />
+			</image>
+		</ImageView>
+		<ImageView>
+			<image>
+				<Image url="@images/fruit2.jpg" />
+			</image>
+		</ImageView>
+		<ImageView>
+			<image>
+				<Image url="@images/fruit3.jpg" />
+			</image>
+		</ImageView>
+		<ImageView>
+			<image>
+				<Image url="@images/fruit4.jpg" />
+			</image>
+		</ImageView>
+		<ImageView>
+			<image>
+				<Image url="@images/fruit5.jpg" />
+			</image>
+		</ImageView>
+		<ImageView>
+			<image>
+				<Image url="@images/fruit6.jpg" />
+			</image>
+		</ImageView>
+		<ImageView>
+			<image>
+				<Image url="@images/fruit7.jpg" />
+			</image>
+		</ImageView>
+		<ImageView>
+			<image>
+				<Image url="@images/fruit8.jpg" />
+			</image>
+		</ImageView>
+	</children>
+</TilePane>
+

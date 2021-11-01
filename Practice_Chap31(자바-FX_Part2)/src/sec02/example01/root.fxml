@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0"  xmlns:fx="http://javafx.com/fxml/1" fx:controller="sec02.example01.RootController">
+   <children>
+      <VBox alignment="CENTER" prefHeight="350.0" prefWidth="600.0" spacing="20.0">
+         <children>
+            <Label fx:id="label1" text="2021년에도 자바 공부를">
+            	<font>
+            		<Font size="0"/>
+            	</font>
+            </Label>
+            <Label fx:id="label2" text="열심히 하자">
+            <font>
+            	<Font size="0"/>
+            </font>
+            </Label>
+         </children>
+        </VBox>
+      <Slider fx:id="slider" layoutY="386.0" prefWidth="600.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.TextField?>
+
+
+
+<!-- 여기서 pref의 의미를 알아 볼 필요가 있다. pref는 선호하다 라는 의미를 지니고있다.
+그래서 처음 로딩될 때 웬만하면 pref의 크기로 보여주지만, 사용자가 윈도우창을 조절하게 되면 무시된다.
+borderpane은 하나의 영역안에 컨트롤이나 컨테이너가 1개만 있어야한다. -->
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="200" prefWidth="300">
+	<top>
+		<ToolBar>
+			<items>
+				<Button text="파일전송" />
+				<Button text="캡처" />
+				<Button text="이모티콘" />
+				<Button text="검색" />
+			</items>
+		</ToolBar>
+	</top>
+	
+	<center>
+		<TextArea />
+	</center>
+	
+	<!-- bottom부분에 또 다른 컨테이너인 borderpane추가하고 center에는 textfield를 추가
+	그리고 right부분에는 button추가를 했다
+	borderpane컨테이너는 한 영역에 무조건 하나의 컨테이너나 혹은 하나의 컨트롤만 들어갈수있기 때문에
+	여러 개의 컨트롤을 배치하고 싶으면 해당 영역에 컨테이너를 넣어주면 배치하면 된다. -->
+	<bottom>
+		<BorderPane>
+				<center>
+					<TextField />
+				</center>
+				<right>
+					<Button text="보내기" />
+				</right>
+		</BorderPane>
+	</bottom>
+</BorderPane>
+

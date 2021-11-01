@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;example03.SystemEx&apos; to &apos;SystemEx01&apos;&#x0D;&#x0A;- Original project: &apos;Practice_Chap18(기타클래스들)&apos;&#x0D;&#x0A;- Original element: &apos;example03.SystemEx&apos;&#x0D;&#x0A;- Renamed element: &apos;example03.SystemEx01&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;SystemEx&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;example03{SystemEx.java[SystemEx" matchStrategy="1" name="SystemEx01" qualified="false" references="true" similarDeclarations="false" stamp="1595761992942" textual="false" version="1.0"/>
+</session>

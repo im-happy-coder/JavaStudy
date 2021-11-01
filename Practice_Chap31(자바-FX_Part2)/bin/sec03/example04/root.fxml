@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="800.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sec03.example04.RootController">
+   <children>
+      <Label layoutX="245.0" layoutY="33.0" text="가장 비싼 차 순위">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tableView" layoutX="35.0" layoutY="91.0" prefHeight="251.0" prefWidth="366.0">
+        <columns>
+          <TableColumn prefWidth="175.0" text="이름" />
+          <TableColumn prefWidth="75.0" text="가격" />
+          <!-- 얼마든지 테이블뷰의 컬럼들을 아래와 같이 추가 할 수 있다. 단, 추가해주는 만큼 여기에 매핑되는 car클래스의 멤버변수도 추가해야한다.
+           <TableColumn prefWidth="75.0" text="제조사" /> -->
+        </columns>
+      </TableView>
+      <ImageView fx:id="imageView" fitHeight="251.0" fitWidth="347.0" layoutX="424.0" layoutY="91.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>

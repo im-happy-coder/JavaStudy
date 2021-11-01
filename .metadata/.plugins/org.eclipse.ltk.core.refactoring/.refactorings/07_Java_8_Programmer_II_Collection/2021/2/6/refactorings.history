@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;examp01.SetEx1&apos; to &apos;CollectionEx2&apos;&#x0D;&#x0A;- Original project: &apos;07_Java_8_Programmer_II_Collection&apos;&#x0D;&#x0A;- Original element: &apos;examp01.SetEx1&apos;&#x0D;&#x0A;- Renamed element: &apos;examp01.CollectionEx2&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;SetEx1&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;examp01{SetEx1.java[SetEx1" matchStrategy="1" name="CollectionEx2" qualified="false" references="true" similarDeclarations="false" stamp="1612352371365" textual="false" version="1.0"/>
+</session>

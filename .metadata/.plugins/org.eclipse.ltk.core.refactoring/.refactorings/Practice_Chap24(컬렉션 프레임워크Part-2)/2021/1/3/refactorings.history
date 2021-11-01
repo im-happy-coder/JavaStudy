@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Practice_Chap24(컬렉션 프레임워크Part-2)/src/examp06/database&apos; to &apos;database.properties&apos;" description="Rename resource &apos;database&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/examp06/database" name="database.properties" stamp="1610690107435" updateReferences="true"/>
+</session>

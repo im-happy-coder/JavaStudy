@@ -1,0 +1,21 @@
+/*텍스트 필드에 포커스가 지정될때*/
+TextField:focused{
+	-fx-background-color: yellow;
+	-fx-border-color: red;
+	-fx-border-width: 2px;
+}
+
+
+/*Button에 마우스가 올라갔을 때 */
+Button:hover{
+	-fx-background-color: yellowgreen;
+	-fx-border-color: blue;
+	-fx-border-width: 1px;
+}
+
+/*Button에 마우스가 클릭하면 */
+Button:pressed{
+	-fx-background-color: red;
+	-fx-border-color: blue;
+	-fx-border-width: 1px;
+}

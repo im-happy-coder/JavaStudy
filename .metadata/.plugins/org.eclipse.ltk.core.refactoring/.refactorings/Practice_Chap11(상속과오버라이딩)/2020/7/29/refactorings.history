@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;CardDeck&apos; to &apos;cardDeck&apos;&#x0D;&#x0A;- Original project: &apos;Practice_Chap11(상속과오버라이딩)&apos;&#x0D;&#x0A;- Original element: &apos;Practice_Chap11(상속과오버라이딩)/src/CardDeck&apos;&#x0D;&#x0A;- Renamed element: &apos;Practice_Chap11(상속과오버라이딩)/src/cardDeck&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;CardDeck&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;CardDeck" name="cardDeck" qualified="false" references="true" stamp="1594910889066" textual="false" version="1.0"/>
+</session>

@@ -1,0 +1,108 @@
+2.TCP 네트워크
+	TCP(Transmission Control Protocol)
+	-특징
+	연결 지향적 프로토콜 -> 시간소요(연결부터 먼저 해야 된다.)  프로토콜=통신규약(너와 내가 이야기 할 때)
+	통신 선로 고정 -> 전송 속도 느려질 수 있음(네트워크 환경에 영향 받느다)
+	데이터를 정확하고 안정적으로 전달하기 때문에 데이터의 누수가 없다.
+	
+	-Java.net API
+	ServerSocket, Socket
+	-ServerSocket과 Socket용도
+	
+	
+	--중요--
+	클라이언트의 소켓을 통하여 요청이 들어오면, ServerSocket에서 특정 포트번호로 프로그램을 식별하여 특정프로그램과 바인딩을 하게된다.
+	즉, 클라이언트 프로그램과 연동이 된다.
+	그리고 accept()에서는 클라이언트의 연결을 수락하기 위해서 대기한다.
+	그리고 연결이 수락되어지면 accpet()는 Socket객체를 만들어 클라이언트와 통신을 하게 된다.
+	
+	-ServerSocket생성과 연결 수락(서버 쪽)
+	ServerSocket생성과 포트 바인딩(2가지 방법)
+	1.ServerSocket serverSocket = new ServerSocket(5001); 5001은 포트넘버
+	2.ServerSocket serverSocket = new ServerSocket();
+	serverSocket.bind(new InetSocketAddress("127.0.0.1", 5001)); ip주소는 localhost로 적어도 된다
+	
+	연결 수락
+	try{
+		Socket socket = serverSocket.accept(); //클라이언트의 요청이 오면 서버는 통신용 소켓을 만듬.
+		}
+		
+	accept()메소드는 클라이언트가 연결 요청전 까지는 블로킹(대기상태) - 중요
+	연결된 클라이언트 IP주소 얻기
+	InetSocketAddress socketAddress = (InetSocketAddress)socket.getRemoteSocketAddress();
+	String getHostName() = 클라이언트 ip 리턴
+	String getPort() = 클라이언트 포트 번호 리턴
+	String toString() = ip, 포트번호 문자열 리턴
+	
+	ServerSocket포트 언바인딩
+	더 이상 클라이언트 연결 수락 필요 없는 경우
+	serverSocket.close();
+	
+	
+	-Socket생성과 연결 요청(클라이언트 쪽)
+	Socket 생성 및 연결 요청
+	java.net.Socket이용
+	서버의 ip주소와 바인딩 포트 번호를 제공하면 생성과 동시에 사용 가능
+	try{
+	 1번쨰 방법
+	 Socket socket = new Socket("loacalhost", 5001); //서버의 ip와 포트번호
+	 2번쨰 방법
+	 Socket socket = new Socket(new InetSocketAddress("localhost", 5001);
+	 } catch(UnknownHostException e){
+	 	//ip표기 방법이 잘못된 경우
+	 	}catch (IOException e){
+	 	//해당 포트의 서버에 연결 할 수 없는 경우
+	 	}
+	 	
+	 	아래는 바로 Socket을 생성 후 , connect를 하는 방법이다.
+	 	socket = new Socket();
+	 	Socket.connect(new InetSocketAddress("localhost", 5001));
+	 	
+	 	연결 끊기
+	 	try{
+	 	socket.close();
+	 	}catch(IOException e){
+	 	}
+	
+	
+	-스레드 병렬 처리
+	블로킹(대기 상태)가 되는 메소드
+	ServerSocket의 accpet()
+	Socket생성자 또는 connect()
+	Socket의 read(), write()
+	= 별도의 작업 스레드를 생성해야 한다. = 스레드 풀
+	
+	스레드 풀은 스레드 수를 제한해서 사용하기 때문에 갑작스런 클라이언트 폭증은 작업큐의 작업량만 증가시킬 뿐이지 스레드 수는 변함이 없으므로,
+	서버 성능은 완만히 저하된다.
+	다만 대기하는 작업량이 많기 때문에 개벽 클라이언트에서 응답을 늦게 받을 수 있다.
+	
+	-병렬처리의 필요성
+	스레드가 블로킹되면 다른 작업을 수행하지 못한다.
+	 입출력할 동안 다른 클라이언트의 연결 요청 수락하지 못한다.
+	 입출력할 동안 다른 클라이언트의 입출력을 하지 못한다.
+	-UI 생성/변경 스레드에서 블로킹 메소드를 호출하지 않도록 한다.
+	 UI생성 및 변경이 안되고 이벤트 처리가 안된다.
+	 
+	 
+	 
+	 -채팅 서버 및 클라이언트 구현
+	 -서버
+	 	startServer()
+	 		-Executor Service, 서버 소켓 생성, 포트 바인딩, 연결 수락 코드
+	 	stopServer()
+	 		-연결된 모든 소켓, 서버 소켓 닫기, ExecutorService종료
+	 	클라이언트 클래스
+	 		-다수 클라이언트 관리 -> 각자 클라이언트 인스턴스 생성해 관리(클라이언트에 몇명이 접속 했는지 관리)
+	 	UI생성코드(javaFx 이용한 UI 생성 코드)
+	 	
+	 -클라이언트
+	 startclient() -소켓생성및 연결 요청 코드
+	 stopclient() -소켓통신닫는기능도 포함
+	 receive() - 서버에서 보낸 데이터 받음
+	 send(String data) - 사용자가 보낸 메시지 서버로 보냄
+	 UI생성코드
+	 
+	 
+	 
+	
+	

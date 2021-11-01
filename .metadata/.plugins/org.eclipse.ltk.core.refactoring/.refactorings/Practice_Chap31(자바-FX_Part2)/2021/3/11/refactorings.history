@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 2 elements to &apos;Practice_Chap32(자바-FX_Part3)/src/sec01.example01&apos;&#x0D;&#x0A;- Original project: &apos;Practice_Chap31(자바-FX_Part2)&apos;&#x0D;&#x0A;- Destination element: &apos;Practice_Chap32(자바-FX_Part3)/src/sec01.example01&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     sec02.example02.AppMain.java&#x0D;&#x0A;     sec02.example02.RootController.java" description="Copy compilation units" destination="=Practice_Chap32\(자바-FX_Part3)/src&lt;sec01.example01" element1="/src&lt;sec02.example02{AppMain.java" element2="/src&lt;sec02.example02{RootController.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1615119675007" units="2" version="1.0"/>
+</session>

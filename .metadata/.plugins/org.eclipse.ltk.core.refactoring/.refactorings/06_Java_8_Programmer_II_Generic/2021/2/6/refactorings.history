@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;examp01.whlid&apos; to &apos;whlidCardEx1&apos;&#x0D;&#x0A;- Original project: &apos;06_Java_8_Programmer_II_Generic&apos;&#x0D;&#x0A;- Original element: &apos;examp01.whlid&apos;&#x0D;&#x0A;- Renamed element: &apos;examp01.whlidCardEx1&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;whlid&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;examp01{whlid.java[whlid" matchStrategy="1" name="whlidCardEx1" qualified="false" references="true" similarDeclarations="false" stamp="1612268906222" textual="false" version="1.0"/>
+</session>

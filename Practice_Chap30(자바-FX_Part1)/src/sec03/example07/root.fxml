@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+
+<!-- 스택은 후입선출
+	 StackPane은 CardLayout에서 기초가 되어 발전한 컨테이너이다.
+	 각 층으로 이루어져 여러가지 컨트롤을 배치하면 된다.
+ -->
+<StackPane xmlns:fx="http://javafx.com/fxml/1">
+	<ImageView preserveRatio="true" fitWidth="800" fitHeight="500">
+		<image>
+			<Image url="@images/바탕화면.jpg" />
+		</image>
+	</ImageView>
+	<ImageView preserveRatio="true" fitWidth="300" fitHeight="300">
+		<image>
+			<Image url="@images/image1.jpg" />
+		</image>
+	</ImageView>
+</StackPane>
+

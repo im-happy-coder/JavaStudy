@@ -1,0 +1,26 @@
+#vbox1{
+	-fx-background-color: #F70083;
+}
+
+#vbox2{
+	-fx-border-color: black;
+	/*배경색을 rgba()를 이용하여 설정하였다. 1.0은 투명도 */
+	-fx-background-color: rgba(255.0, 255.0, 0.0, 1.0);
+}
+#vbox3{
+	/*배경색을 선형그라디언트 형태로 주었고 top방향으로 검정색이 흰색으로 변경이 된다. */
+	-fx-background-color: linear-gradient(to top, #000000, #ffffff);
+}
+
+#vbox4{
+	/* 이미지 파일로 배경을 설정하였다. no-repeat은 반복을 안함*/
+	-fx-background-image: url("images/icon.gif");
+	-fx-background-repeat: no-repeat;
+}
+
+#vbox5{
+	/* 이미지 파일로 배경을 설정하였다. no-repeat은 반복을 안함*/
+	-fx-background-image: url("images/icon.gif");
+	-fx-background-repeat: no-repeat;
+	-fx-background-position: center;
+}

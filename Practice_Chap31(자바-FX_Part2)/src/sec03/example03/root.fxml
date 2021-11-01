@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.collections.*?>
+<?import java.lang.String?>
+
+
+<AnchorPane prefHeight="280.0" prefWidth="325.0" xmlns:fx="http://javafx.com/fxml/1"  fx:controller="sec03.example03.RootController">
+   <children>
+      <Label layoutX="111.0" layoutY="14.0" text="리스트 뷰">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <ListView fx:id="listView" layoutX="40.0" layoutY="75.0" prefHeight="150.0" prefWidth="115.0" AnchorPane.topAnchor="75.0" >
+      	<items>
+      		<FXCollections fx:factory="observableArrayList">
+      			<String fx:value="LG-1.png" />
+      			<String fx:value="LG-2.png" />
+      			<String fx:value="LG-3.png" />
+      			<String fx:value="LG-4.png" />
+      			<String fx:value="LG-5.png" />
+      			<String fx:value="LG-6.png" />
+      			<String fx:value="LG-7.png" />
+      		</FXCollections>
+      	</items>
+      </ListView>
+      <ImageView fx:id="imageView" fitHeight="150.0" fitWidth="100.0" layoutX="183.0" layoutY="75.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="btn1_print" layoutX="72.0" layoutY="237.0" mnemonicParsing="false" text="확인" />
+      <Button fx:id="btn2_exit" layoutX="207.0" layoutY="237.0" mnemonicParsing="false" text="취소" />
+   </children>
+</AnchorPane>

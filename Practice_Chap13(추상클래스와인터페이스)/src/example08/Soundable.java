@@ -1,0 +1,7 @@
+package example08;
+
+//인터페이스에 추상메서드가 오로지 한개만 존재하면 함수적 인터페이스라고 한다.(람다식)
+public interface Soundable {
+
+	public void sound();
+}
