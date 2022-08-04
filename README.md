@@ -1,2 +1,2 @@
-## Java Launguage 공부하면서 Coding한 Example들 입니다.
-### 이 Source 파일은 개인 Study 목적으로 제작되었습니다.
+### 학부시절 Java언어 공부하면서 배웠던 소스입니다.
+### 자바 자격증 OCPJP에 대한 소스도 포함되어 있습니다.
