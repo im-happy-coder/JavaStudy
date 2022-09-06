@@ -1,2 +1,2 @@
-### 학부시절 Java언어 공부하면서 배웠던 소스입니다.
-### 자바 자격증 OCPJP에 대한 소스도 포함되어 있습니다.
+### Study Java
+### Java license OCJP
